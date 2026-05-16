@@ -1,0 +1,63 @@
+baseURL = 'https://star-626.github.io/mhc-blog/'
+locale = 'zh-CN'
+title = "MHC 的博客"
+theme = 'PaperMod'
+defaultContentLanguage = 'zh'
+
+[pagination]
+  pagerSize = 10
+enableRobotsTXT = true
+
+[params]
+  env = 'production'
+  description = "一个机器人工程学生的技术记录与生活思考"
+  author = 'MHC'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowFullTextinRSS = true
+  ShowRssButtonInSectionTermList = true
+  ShowAllPagesInArchive = true
+  images = ['images/avatar.png']
+
+  [params.homeInfoParams]
+    Title = "你好，我是 MHC"
+    Content = "电子科技大学机器人工程专业在读。\n捣鼓机械结构、嵌入式系统和 AI 工具。\n这个博客记录我在机器人、编程和知识管理方面的折腾。"
+
+  [params.label]
+    text = "MHC 的博客"
+    iconHeight = 0
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/STAR-626'
+  [[params.socialIcons]]
+    name = 'email'
+    url = 'mailto:hanchao.ma@outlook.com'
+  [[params.socialIcons]]
+    name = 'rss'
+    url = 'index.xml'
+
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = '文章'
+    url = '/posts/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'about'
+    name = '关于'
+    url = '/about/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'search'
+    name = '搜索'
+    url = '/search/'
+    weight = 30
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+  section = ['HTML', 'RSS']
